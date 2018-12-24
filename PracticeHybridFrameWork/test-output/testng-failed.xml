@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <listeners>
+    <listener class-name="com.practice.utility.listeners"/>
+    <listener class-name="com.practice.utility.ExtentReporterNG"/>
+    <listener class-name="com.practice.utility.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="SignUp(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.practice.testcases.SignUpTest">
+        <methods>
+          <include name="remove_firstname"/>
+          <include name="remove_password"/>
+          <include name="close"/>
+          <include name="without_entering_click_createAccount"/>
+          <include name="remove_lasttname"/>
+          <include name="setup"/>
+          <include name="remove_email"/>
+        </methods>
+      </class> <!-- com.practice.testcases.SignUpTest -->
+    </classes>
+  </test> <!-- SignUp(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
