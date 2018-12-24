@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+
+        
+		<listener class-name="com.bank.selenium.testutility.ExtentReporterNG"/>
+		<!--  <listener class-name="com.bank.selenium.testutility.Reporting"/> -->
+	</listeners> 
+
+  <test thread-count="5" name="LoginTest">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.DepositeDataDrivenTest"/>
+      
+    </classes>
+  </test> <!-- banktestng -->
+  <!--  
+  <test thread-count="5" name="InValid Login Test">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.InvalidLoginTest"/>
+      
+    </classes>
+  </test>
+  
+  
+  
+  <test thread-count="5" name="Login Data Driven">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.LoginDDTTest"/>
+      
+    </classes>
+  </test>
+  
+  
+   <test thread-count="5" name="Add New Customer">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.AddNewCustomerTest"/>
+      
+    </classes>
+  </test>
+  
+  
+   <test thread-count="5" name="EditCustomer">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.EditCustomerTest"/>
+      
+    </classes>
+  </test>
+  
+   <test thread-count="5" name="new Account">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.NewAccountTest"/>
+      
+    </classes>
+  </test>
+  
+  
+   <test thread-count="5" name="Deposite Test">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.DepositeTest"/>
+      
+    </classes>
+  </test>
+   <test thread-count="5" name="Link BrokenTest">
+  
+  <parameter name="browser" value="Chrome"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.VerifyAllLink"/>
+      
+    </classes>
+  </test>
+  
+    
+   <test thread-count="5" name="Firefox LoginTest">
+  
+  <parameter name="browser" value="firefox"/>
+    <classes>
+     
+      <class name="com.bank.selenium.testcases.LoginTest"/>
+    </classes>
+  </test> 
+  -->
+</suite> <!-- Suite -->

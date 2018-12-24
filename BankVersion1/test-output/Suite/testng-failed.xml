@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.bank.selenium.testutility.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="LoginTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.bank.selenium.testcases.DepositeDataDrivenTest">
+        <methods>
+          <include name="testDepositeDataDriven" invocation-numbers="1 2 3 4"/>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.bank.selenium.testcases.DepositeDataDrivenTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
